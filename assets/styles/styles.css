@@ -44,4 +44,10 @@ body {
 .game-options {
     display: flex;
     justify-content: center;
+    position: relative;
+}
+
+.game-option#theme-selector {
+    position: absolute;
+    right: 0;
 }
