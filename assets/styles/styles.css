@@ -86,6 +86,11 @@ body {
     position: relative;
 }
 
+.game-option#game-reset {
+    transition-property: opacity, visibility;
+    transition-duration: .5s;
+}
+
 .game-option#theme-selector {
     position: absolute;
     right: 0;
