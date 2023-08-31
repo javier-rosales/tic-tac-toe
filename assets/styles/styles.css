@@ -14,6 +14,7 @@ body {
 .text.title {
     padding: 20px 0;
     text-align: center;
+    background-color: white;
 }
 
 .text.instruction {
@@ -21,6 +22,15 @@ body {
     justify-content: center;
     align-items: center;
     height: 50px;
+    transition-property: transform, height;
+    transition-duration: .5s;
+    position: relative;
+    z-index: -10;
+}
+
+.text.instruction.removed {
+    height: 0;
+    transform: translateY(-50px);
 }
 
 .players,
@@ -44,6 +54,30 @@ body {
     flex-grow: 1;
     display: flex;
     flex-direction: column;
+    position: relative;
+}
+
+#gameboard {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+}
+
+.game-settings {
+    padding: 20px 0;
+}
+
+#gameboard,
+.game-settings {
+    transition-property: opacity, visibility;
+    transition-duration: .5s;
+}
+
+.hidden {
+    opacity: 0;
+    visibility: hidden;
 }
 
 .game-options {
