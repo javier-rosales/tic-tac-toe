@@ -30,7 +30,7 @@ body {
 }
 
 .players {
-    padding: 30px 0;
+    padding: 20px 0;
 }
 
 .player {
@@ -40,12 +40,16 @@ body {
     width: 75px;
 }
 
+.game-settings {
+    margin: 20px 0;
+}
+
 .game-area {
     flex-grow: 1;
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    padding: 0 25px;
+    padding: 20px;
 }
 
 #gameboard {
