@@ -77,13 +77,13 @@ body {
     background-color: #ffffff;
 }
 
-.game-settings {
-    padding: 20px 0;
+.game-settings.hidden {
+    margin: 10px 0;
 }
 
 #gameboard,
 .game-settings {
-    transition-property: opacity, visibility;
+    transition-property: opacity, visibility, margin;
     transition-duration: .5s;
 }
 
