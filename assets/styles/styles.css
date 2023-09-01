@@ -48,8 +48,8 @@ body {
     flex-grow: 1;
     display: flex;
     justify-content: center;
-    align-items: center;
-    padding: 20px;
+    align-items: flex-start;
+    padding: 35px 30px;
 }
 
 #gameboard {
