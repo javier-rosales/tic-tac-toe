@@ -45,6 +45,22 @@ body {
     display: flex;
     justify-content: center;
     align-items: flex-start;
+    padding: 0 25px;
+}
+
+#gameboard {
+    flex-grow: 1;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+    max-width: 350px;
+    background-color: #000000;
+}
+
+.gameboard__square {
+    aspect-ratio: 1 / 1;
+    cursor: pointer;
+    background-color: #ffffff;
 }
 
 .game-options {
