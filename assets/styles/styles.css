@@ -10,6 +10,8 @@
     --color-blue-tertiary-light: #023047;
     --color-yellow-light: #ffb703;
     --color-orange-light: #fb8500;
+    --color-transparent-primary-light: rgba(2, 48, 71, 0.05);
+    --color-transparent-secondary-light: rgba(2, 48, 71, 0.2);
 }
 
 html {
