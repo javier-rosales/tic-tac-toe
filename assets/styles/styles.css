@@ -4,6 +4,14 @@
     box-sizing: border-box;
 }
 
+:root {
+    --color-blue-primary-light: #d9f4ff;
+    --color-blue-secondary-light: #219ebc;
+    --color-blue-tertiary-light: #023047;
+    --color-yellow-light: #ffb703;
+    --color-orange-light: #fb8500;
+}
+
 html {
     font-family: "Roboto", sans-serif;
 }
