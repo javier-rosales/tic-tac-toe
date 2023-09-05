@@ -5,18 +5,18 @@
 }
 
 :root {
-    --color-blue-primary-light: #d9f4ff;
-    --color-blue-secondary-light: #219ebc;
-    --color-blue-tertiary-light: #023047;
-    --color-yellow-light: #ffb703;
-    --color-orange-light: #fb8500;
-    --color-transparent-primary-light: rgba(2, 48, 71, 0.05);
-    --color-transparent-secondary-light: rgba(2, 48, 71, 0.2);
+    --color-blue-primary: #d9f4ff;
+    --color-blue-secondary: #219ebc;
+    --color-blue-tertiary: #023047;
+    --color-yellow: #ffb703;
+    --color-orange: #fb8500;
+    --color-transparent-primary: rgba(2, 48, 71, 0.05);
+    --color-transparent-secondary: rgba(2, 48, 71, 0.2);
 }
 
 html {
     font-family: "Roboto", sans-serif;
-    color: var(--color-blue-tertiary-light);
+    color: var(--color-blue-tertiary);
 }
 
 body {
@@ -24,13 +24,13 @@ body {
     flex-direction: column;
     min-height: 100vh;
     padding: 25px;
-    background-color: var(--color-blue-primary-light);
+    background-color: var(--color-blue-primary);
 }
 
 .text.title {
     padding: 20px 0;
     text-align: center;
-    color: var(--color-blue-secondary-light);
+    color: var(--color-blue-secondary);
 }
 
 .text.instruction {
@@ -58,7 +58,7 @@ body {
 }
 
 .player > i {
-    color: var(--color-orange-light);
+    color: var(--color-orange);
 }
 
 .game-settings {
@@ -66,7 +66,7 @@ body {
 }
 
 .game-setting {
-    color: var(--color-blue-secondary-light);
+    color: var(--color-blue-secondary);
 }
 
 .game-area {
@@ -83,13 +83,13 @@ body {
     grid-template-columns: repeat(3, 1fr);
     gap: 5px;
     max-width: 350px;
-    background-color: var(--color-blue-tertiary-light);
+    background-color: var(--color-blue-tertiary);
 }
 
 .gameboard__square {
     aspect-ratio: 1 / 1;
     cursor: pointer;
-    background-color: var(--color-blue-primary-light);
+    background-color: var(--color-blue-primary);
 }
 
 .game-options {
@@ -99,7 +99,7 @@ body {
 }
 
 .game-option {
-    color: var(--color-blue-secondary-light);
+    color: var(--color-blue-secondary);
 }
 
 .game-option#theme-selector {
