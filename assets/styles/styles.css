@@ -14,6 +14,7 @@
 
 html {
     font-family: "Roboto", sans-serif;
+    color: var(--color-blue-tertiary-light);
 }
 
 body {
@@ -21,11 +22,13 @@ body {
     flex-direction: column;
     min-height: 100vh;
     padding: 25px;
+    background-color: var(--color-blue-primary-light);
 }
 
 .text.title {
     padding: 20px 0;
     text-align: center;
+    color: var(--color-blue-secondary-light);
 }
 
 .text.instruction {
@@ -52,8 +55,16 @@ body {
     width: 75px;
 }
 
+.player > i {
+    color: var(--color-orange-light);
+}
+
 .game-settings {
     margin: 20px 0;
+}
+
+.game-setting {
+    color: var(--color-blue-secondary-light);
 }
 
 .game-area {
@@ -70,19 +81,23 @@ body {
     grid-template-columns: repeat(3, 1fr);
     gap: 5px;
     max-width: 350px;
-    background-color: #000000;
+    background-color: var(--color-blue-tertiary-light);
 }
 
 .gameboard__square {
     aspect-ratio: 1 / 1;
     cursor: pointer;
-    background-color: #ffffff;
+    background-color: var(--color-blue-primary-light);
 }
 
 .game-options {
     display: flex;
     justify-content: center;
     position: relative;
+}
+
+.game-option {
+    color: var(--color-blue-secondary-light);
 }
 
 .game-option#theme-selector {
