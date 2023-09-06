@@ -113,3 +113,19 @@ body {
     position: absolute;
     right: 0;
 }
+
+.game-setting,
+.game-option {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: var(--color-transparent-primary);
+}
+
+.game-setting:active,
+.game-option:active {
+    background-color: var(--color-transparent-secondary);
+}
