@@ -123,6 +123,7 @@ body {
     height: 45px;
     border-radius: 50%;
     background-color: var(--color-transparent-primary);
+    font-size: 1.1rem;
 }
 
 .game-setting:active,
