@@ -109,9 +109,62 @@ body {
     color: var(--color-blue-secondary);
 }
 
-.game-option#theme-selector {
+#container-theme-switch {
     position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
     right: 0;
+}
+
+#theme-switch {
+    display: block;
+    appearance: none;
+    width: 50px;
+    height: 25px;
+    background-color: var(--color-transparent-primary);
+    border-radius: 25px;
+}
+
+#theme-switch::before {
+    content: "";
+    background-color: var(--color-blue-primary);
+    width: 17px;
+    height: 17px;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    border-radius: 50%;
+    transition: all 0.3s;
+}
+
+#theme-switch:checked::before {
+    left: 29px;
+}
+
+#container-theme-switch .light,
+#container-theme-switch .dark {
+    position: absolute;
+    color: var(--color-orange);
+    z-index: 10;
+    pointer-events: none;
+    width: 17px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+}
+
+#container-theme-switch .light {
+    left: 4px;
+}
+
+#container-theme-switch .dark {
+    left: 29px;
+}
+
+label[for="theme-switch"] {
+    display: none;
 }
 
 .game-setting,
