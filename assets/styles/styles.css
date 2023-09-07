@@ -11,6 +11,7 @@
     --color-orange: #fb8500;
     --color-transparent-primary: rgba(2, 48, 71, 0.1);
     --color-transparent-secondary: rgba(2, 48, 71, 0.2);
+    --transition-theme-duration: 0.3s;
 }
 
 :root:has(#theme-switch:checked) {
@@ -32,6 +33,7 @@ body {
     min-height: 100vh;
     padding: 25px;
     background-color: var(--color-blue-primary);
+    transition: background-color var(--transition-theme-duration);
 }
 
 .text.title {
@@ -45,6 +47,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 50px;
+    transition: color var(--transition-theme-duration);
 }
 
 .players,
@@ -68,11 +71,14 @@ body {
     background-color: var(--color-transparent-primary);
     text-align: center;
     font-weight: 700;
+    transition-property: background-color, color;
+    transition-duration: var(--transition-theme-duration);
 }
 
 .player > i {
     font-size: 1.2rem;
     color: var(--color-orange);
+    transition: color var(--transition-theme-duration);
 }
 
 .game-settings {
@@ -98,12 +104,14 @@ body {
     gap: 5px;
     max-width: 350px;
     background-color: var(--color-blue-tertiary);
+    transition: background-color var(--transition-theme-duration);
 }
 
 .gameboard__square {
     aspect-ratio: 1 / 1;
     cursor: pointer;
     background-color: var(--color-blue-primary);
+    transition: background-color var(--transition-theme-duration);
 }
 
 .game-options {
@@ -130,6 +138,7 @@ body {
     height: 25px;
     background-color: var(--color-transparent-primary);
     border-radius: 25px;
+    transition: background-color var(--transition-theme-duration);
 }
 
 #theme-switch::before {
@@ -141,7 +150,8 @@ body {
     top: 4px;
     left: 4px;
     border-radius: 50%;
-    transition: all 0.3s;
+    transition-property: left, background-color;
+    transition-duration: var(--transition-theme-duration);
 }
 
 #theme-switch:checked::before {
@@ -160,6 +170,7 @@ body {
     justify-content: center;
     align-items: center;
     font-size: 12px;
+    transition: color var(--transition-theme-duration);
 }
 
 #container-theme-switch .light {
@@ -184,9 +195,11 @@ label[for="theme-switch"] {
     border-radius: 50%;
     background-color: var(--color-transparent-primary);
     font-size: 1.1rem;
+    transition: background-color var(--transition-theme-duration);
 }
 
 .game-setting:active,
 .game-option:active {
+    transition: initial;
     background-color: var(--color-transparent-secondary);
 }
