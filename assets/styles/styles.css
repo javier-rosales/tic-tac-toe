@@ -8,10 +8,17 @@
     --color-blue-primary: #d9f4ff;
     --color-blue-secondary: #219ebc;
     --color-blue-tertiary: #023047;
-    --color-yellow: #ffb703;
     --color-orange: #fb8500;
     --color-transparent-primary: rgba(2, 48, 71, 0.1);
     --color-transparent-secondary: rgba(2, 48, 71, 0.2);
+}
+
+:root:has(#theme-switch:checked) {
+    --color-blue-primary: #023047;
+    --color-blue-tertiary: #d9f4ff;
+    --color-orange: #ffb703;
+    --color-transparent-primary: rgba(217, 244, 255, 0.1);
+    --color-transparent-secondary: rgba(217, 244, 255, 0.2);
 }
 
 html {
