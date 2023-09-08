@@ -85,10 +85,6 @@ body {
     margin: 20px 0;
 }
 
-.game-setting {
-    color: var(--color-blue-secondary);
-}
-
 .game-area {
     flex-grow: 1;
     display: flex;
@@ -120,8 +116,24 @@ body {
     position: relative;
 }
 
+.game-setting,
 .game-option {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: var(--color-transparent-primary);
+    font-size: 1.1rem;
     color: var(--color-blue-secondary);
+    transition: background-color var(--transition-theme-duration);
+}
+
+.game-setting:active,
+.game-option:active {
+    transition: initial;
+    background-color: var(--color-transparent-secondary);
 }
 
 #container-theme-switch {
@@ -183,23 +195,4 @@ body {
 
 label[for="theme-switch"] {
     display: none;
-}
-
-.game-setting,
-.game-option {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
-    background-color: var(--color-transparent-primary);
-    font-size: 1.1rem;
-    transition: background-color var(--transition-theme-duration);
-}
-
-.game-setting:active,
-.game-option:active {
-    transition: initial;
-    background-color: var(--color-transparent-secondary);
 }
