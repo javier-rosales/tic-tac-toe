@@ -196,3 +196,58 @@ body {
 label[for="theme-switch"] {
     display: none;
 }
+
+/* Media queries */
+
+@media (min-width: 320px) {
+    html {
+        font-size: 18px;
+    }
+
+    .player {
+        width: 40%;
+        padding: 12px;
+    }
+
+    .game-settings {
+        margin: 15px 0;
+    }
+
+    .game-setting,
+    .game-option {
+        width: 50px;
+        height: 50px;
+        font-size: 1rem;
+    }
+
+    #theme-switch {
+        width: 70px;
+        height: 35px;
+        border-radius: 35px;
+    }
+
+    #theme-switch::before {
+        width: 25px;
+        height: 25px;
+        top: 5px;
+        left: 5px;
+    }
+
+    #theme-switch:checked::before {
+        left: 40px;
+    }
+
+    #container-theme-switch .light,
+    #container-theme-switch .dark {
+        width: 25px;
+        font-size: 15px;
+    }
+
+    #container-theme-switch .light {
+        left: 5px;
+    }
+
+    #container-theme-switch .dark {
+        left: 40px;
+    }
+}
