@@ -114,7 +114,6 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 5px;
-    max-width: 350px;
     background-color: var(--color-blue-tertiary);
     transition-property: opacity, visibility, background-color;
     transition-duration: var(--transition-theme-duration);
@@ -281,5 +280,11 @@ label[for="theme-switch"] {
 
     #container-theme-switch .dark {
         left: 40px;
+    }
+}
+
+@media (min-width: 375px) {
+    #gameboard {
+        max-width: 280px;
     }
 }
