@@ -288,3 +288,14 @@ label[for="theme-switch"] {
         max-width: 280px;
     }
 }
+
+@media (min-width: 768px) {
+    body {
+        max-width: 750px;
+        margin: 0 auto;
+    }
+
+    .player {
+        width: 30%;
+    }
+}
